@@ -1,0 +1,27 @@
+<html><meta charset="utf-8">
+<style>
+body{background:#000;color:green;
+font-size:100px;padding:50px;}
+#ici{background:#007;height:100px;}
+input, button{height:70px;font-size:20px;}
+</style>
+<body>
+<input id="fra" placeholder="écrivez en wolof">
+<button id="bt" onclick="GO()">TRADUIRE </button>
+<DIV id="ici"></DIV>
+<script>
+function GO(){
+var x=document.getElementById("fra").
+value;
+var y="";
+if(x=="yalla"||x=="Yalla"){y="Dieu";}
+else if(x=="waw"||x=="Waw")
+{y="Oui";}
+else{y="faux";}
+document.getElementById("ici").
+innerHTML=y;
+
+}
+</script>
+</body >
+</html>
